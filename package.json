@@ -10,7 +10,6 @@
   "scripts": {
     "build": "cp node_modules/kissfft-example/jsbuild/*.esm.wasm . && esbuild index.ts --bundle --outdir=. --format=esm --external:module",
     "serve": "cp node_modules/kissfft-example/jsbuild/*.esm.wasm . && esbuild index.ts --bundle --outdir=. --watch --servedir=. --format=esm --external:module",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",

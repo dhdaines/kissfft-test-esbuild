@@ -1,4 +1,4 @@
-import createModule from "kissfft-example"
+import createModule from "kissfft-example";
 const kissfft = await createModule();
 const fftr = new kissfft.RealFFT(16);
 const timedata = new Float32Array([0, 0.5, 0, -0.5,

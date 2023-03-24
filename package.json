@@ -9,13 +9,13 @@
     "kissfft-example": "^0.0.1"
   },
   "scripts": {
-    "build": "node build.js",
-    "serve": "esbuild --servedir=www",
+    "build": "esbuild index.ts --bundle --outdir=. --format=esm --external:module",
+    "serve": "esbuild index.ts --bundle --outdir=. --watch --servedir=. --format=esm --external:module",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@chialab/esbuild-plugin-meta-url": "^0.17.2"
+    "open": "^9.0.0"
   }
 }

@@ -1,5 +1,5 @@
-www/*.js
-www/*.wasm
+index.js
+*.wasm
 package-lock.json
 *~
 node_modules

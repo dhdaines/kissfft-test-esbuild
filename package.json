@@ -1,0 +1,21 @@
+{
+  "name": "kissfft-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "esbuild": "^0.17.10",
+    "kissfft-example": "^0.0.1"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "serve": "esbuild --servedir=www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chialab/esbuild-plugin-meta-url": "^0.17.2"
+  }
+}

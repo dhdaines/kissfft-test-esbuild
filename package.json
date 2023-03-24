@@ -5,12 +5,11 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "esbuild": "^0.17.10",
-    "kissfft-example": "^0.0.1"
+    "esbuild": "^0.17.10"
   },
   "scripts": {
-    "build": "esbuild index.ts --bundle --outdir=. --format=esm --external:module",
-    "serve": "esbuild index.ts --bundle --outdir=. --watch --servedir=. --format=esm --external:module",
+    "build": "cp node_modules/kissfft-example/jsbuild/*.esm.wasm . && esbuild index.ts --bundle --outdir=. --format=esm --external:module",
+    "serve": "cp node_modules/kissfft-example/jsbuild/*.esm.wasm . && esbuild index.ts --bundle --outdir=. --watch --servedir=. --format=esm --external:module",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
